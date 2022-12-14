@@ -1,0 +1,151 @@
+.container-fluid {
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 35px;
+  }
+  .row {
+    .error-message {
+      font-family: "Montserrat-Regular";
+      color: #db4437;
+      word-wrap: break-word;
+      width: 70%;
+    }
+    .login-component {
+      background-color: white;
+      border-radius: 5px;
+      padding: 0;
+      min-width: 250px;
+      max-width: 436px;
+    }
+  }
+}
+
+form {
+  width: 100%;
+  padding: 15px;
+
+  input {
+    font-family: "Montserrat-Regular";
+    &:focus {
+      border-color: #a7a6a2 !important;
+      border-width: 2px !important;
+      box-shadow: none !important;
+    }
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+  .submit-form-button {
+    background-color: #7fa650 !important;
+    width: 100%;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover {
+      background-color: #95bb4a !important;
+    }
+  }
+  .log-in-as-guest {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #dbd9d7 !important;
+    color: #666463;
+    &:hover {
+      background-color: #e7e6e4 !important;
+      color: #545150 !important;
+    }
+  }
+
+  .form-label {
+    font-family: "Montserrat-Regular";
+    color: #666463;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .password-group {
+    position: relative;
+
+    .toggle-password {
+      position: absolute;
+      right: 0.3rem;
+      top: 23%;
+      z-index: 1000;
+      padding: 0 !important;
+      font-family: "Montserrat-Bold";
+      font-size: 0.9rem;
+      color: #007bff;
+      background-color: transparent;
+    }
+  }
+
+  .invalid-feedback {
+    text-align: left;
+  }
+}
+.seperator {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat-Regular";
+  font-size: 0.9rem;
+  color: #666463;
+  & > :first-child,
+  & > :last-child {
+    background-color: #dbd9d7;
+    height: 0.1rem;
+    flex-grow: 1;
+  }
+  .seperator-text {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.social-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 7px;
+  font-size: 20px;
+  padding-left: 17px;
+  .google {
+    color: #db4437;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .facebook {
+    color: #4794f5;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .github {
+    color: #4c4843;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.sign-up-area {
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  a {
+    font-family: "Montserrat-Regular";
+    color: #005e94;
+    font-size: 14px;
+    &:hover {
+      color: #e6912c;
+    }
+  }
+}

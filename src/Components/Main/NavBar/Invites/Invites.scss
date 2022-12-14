@@ -1,0 +1,87 @@
+.invites-list {
+  position: absolute;
+  top: 100%;
+  right: 1%;
+  background-color: transparent;
+  z-index: 1000;
+  li {
+    border-radius: 0.25rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 347px;
+    background-color: white;
+    margin-top: 17px;
+    height: 5rem;
+    padding: 5px;
+    .image-container {
+      width: 45px;
+      height: 45px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name-and-btn-container {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        text-align: left;
+        font-family: "Montserrat-Regular";
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        color: black;
+        padding-left: 5px;
+        margin-bottom: 3px;
+        #player-name {
+          display: inline-block;
+          max-width: 60px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          font-family: "Montserrat-Bold";
+        }
+        #invite-text {
+          margin-left: 5px;
+          display: inline-block;
+        }
+        #cancel-invite {
+          margin-left: 5px;
+          color: var(--danger) !important;
+        }
+      }
+      .btn-container {
+        display: flex;
+        justify-content: space-around;
+
+        .accept-invite {
+          background-color: #dbd9d7;
+          color: #666463;
+          padding: 7px !important;
+          font-size: 0.9rem;
+          &:hover {
+            background-color: #bfbeba;
+            color: #666463;
+          }
+        }
+        .decline-invite {
+          padding: 7px !important;
+          background-color: #e6912c;
+          color: white;
+          font-size: 0.9rem;
+          &:hover {
+            background-color: #d37e19;
+          }
+        }
+      }
+    }
+  }
+  #sender-name-tooltip {
+    font-size: 0.7rem;
+    font-family: "Montserrat-Regular";
+  }
+}

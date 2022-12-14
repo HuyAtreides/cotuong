@@ -1,0 +1,35 @@
+.home-row {
+  justify-content: center !important;
+  align-items: flex-start;
+  min-width: 330px;
+
+  .upload-pic-err {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    z-index: 10000;
+    background-color: var(--danger);
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-family: "Montserrat-Bold";
+
+    .fa-times {
+      position: absolute;
+      top: 3%;
+      right: 0%;
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  .find-players-container {
+    @media screen and (max-width: 768px) {
+      & {
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.game-bar-controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 530px;
+}
+.game-controller {
+  .game-bar {
+    height: 25% !important;
+    min-height: 130px !important;
+  }
+  .button-container {
+    .select-side-container {
+      .draw-btn,
+      .resign-btn {
+        color: hsla(0, 0%, 100%, 0.65);
+        background-color: hsla(0, 0%, 100%, 0.2);
+        font-size: 1.2rem;
+        &:hover:enabled {
+          color: #26211b !important;
+          background-color: white !important;
+        }
+      }
+    }
+    .time-select-container {
+      .pause-btn {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .exit-game {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Bold";
+    color: #db4437;
+
+    background-color: hsla(0, 0%, 100%, 0.2);
+    &:hover:enabled {
+      color: #26211b;
+      background-color: white;
+    }
+    &:disabled {
+      opacity: 0.65;
+      color: #db4437;
+      background-color: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+  .show-chat {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Bold";
+  }
+}
+i {
+  margin-right: 5px;
+}
