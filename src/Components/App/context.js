@@ -6,7 +6,6 @@ const socket = io(`${process.env.REACT_APP_BASE_URL}/play`, {
   withCredentials: true,
   transports: ['websocket', 'polling'],
   rememberUpgrade: true,
-  timeout: 120000,
 });
 const SocketContext = React.createContext();
 const SetMoveTimerContext = React.createContext();
