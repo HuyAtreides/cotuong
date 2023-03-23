@@ -61,7 +61,6 @@ const Main = () => {
 
   useEffect(() => {
     socket.on('disconnect', (reason) => {
-      if (reason !== 'ping timeout') return;
       const foundMatch = store.getState().gameState.foundMatch;
       if (!foundMatch) {
         dispatch({
